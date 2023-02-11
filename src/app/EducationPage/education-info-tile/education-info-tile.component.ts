@@ -1,0 +1,21 @@
+import { Component, Input, OnInit } from '@angular/core';
+import { DataService } from '../data-service';
+import { InfoTileItem } from './education-info-tile-item';
+
+@Component({
+  selector: 'app-education-info-tile',
+  templateUrl: './education-info-tile.component.html',
+  styleUrls: ['./education-info-tile.component.scss']
+})
+export class EducationInfoTileComponent implements OnInit {
+  @Input() imgPath: string = "";
+
+  constructor(
+  ) {
+    
+  }
+  
+  ngOnInit(): void {
+  }
+
+}
