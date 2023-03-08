@@ -1,9 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DataService } from '../data-service';
+import { DataService } from '../../data-service';
 import { InfoTileItem } from './education-info-tile-item';
 
 @Component({
-  selector: 'app-education-info-tile',
+  selector: 'wpfe-education-info-tile',
   templateUrl: './education-info-tile.component.html',
   styleUrls: ['./education-info-tile.component.scss']
 })

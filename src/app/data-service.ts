@@ -1,5 +1,6 @@
-import { InfoTileItem } from "./education-info-tile/education-info-tile-item";
+import { InfoTileItem } from "./EducationPage/education-info-tile/education-info-tile-item";
 import {} from '@angular/core';
+import { LevelItem } from "./levelBar/level-item";
 
 export class DataService {
     private tileList: InfoTileItem[] = [
@@ -15,11 +16,19 @@ export class DataService {
         return this.tileList;
     }
 
+    public getInfoTextParts(): string {  //TODO: Need new Object for InfoTextPart
+        return "";
+    }
+
     private trancferTileJson() {
         this.tileList = [];
     }
 
     private trancferInfoTextJson() {
         this.infoText = "";
+    }
+
+    public getLevelsByTheme(): LevelItem[] {
+        return [];
     }
 }

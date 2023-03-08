@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DataService } from './EducationPage/data-service';
+import { DataService } from './data-service';
 import { EducationInfoPageComponent } from './EducationPage/education-info-page/education-info-page.component';
 import { EducationInfoTileComponent } from './EducationPage/education-info-tile/education-info-tile.component';
 import { EducationPageComponent } from './EducationPage/education-page/education-page.component';
+import { LevelBarComponent } from './levelBar/level-bar.component';
+import { LevelBarButtonComponent } from './levelBar/level-bar-button/level-bar-button.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { EducationPageComponent } from './EducationPage/education-page/education
     AppComponent,
     EducationPageComponent,
     EducationInfoTileComponent,
-    EducationInfoPageComponent
+    EducationInfoPageComponent,
+    LevelBarComponent,
+    LevelBarButtonComponent
   ],
   imports: [
     BrowserModule,
