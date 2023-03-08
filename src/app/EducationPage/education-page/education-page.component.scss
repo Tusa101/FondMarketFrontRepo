@@ -1,12 +1,38 @@
-.wpfe-education-page {
+.wpfe-education-page-main {
 	background-color: #63C55A;
+	border-radius: 15px;
 	width: 1640px;
 	height: 880px;
-	border-radius: 50px;
-	padding-top: 116px;
+	display: flex;
+	flex-direction: column;
+}
+.wpfe-education-page-themes{
 	display: flex;
 	flex-direction: row;
 	padding-left: 94px;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
+}
+@font-face {
+	font-family: 'Ermilov-bold';
+	src: local('Ermilov-bold'),
+		url(/src/app/EducationPage/education-page/Ermilov-bold.otf);
+}
+.wpfe-education-page-wiki{
+	font-family: 'Ermilov-bold';
+	font-size: 50px;
+	margin-top: 20px;
+	text-align: center;
+	color: #d9f0d7;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 526px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+	background: #63C55A;
+	box-shadow:  20px 20px 60px #54a74d,
+             -20px -20px 60px #72e368;
 }
