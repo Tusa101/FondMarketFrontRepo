@@ -1,0 +1,239 @@
+@font-face {
+	font-family: 'Ermilov-bold';
+	src: local('Ermilov-bold'),
+		url(/src/app/EducationPage/education-page/Ermilov-bold.otf);
+}
+.wpfe-education-info-page-theme-Lblock{
+	width: 400px;
+	height: 880px;
+	border-radius: 15px;
+}
+.wpfe-education-info-page-theme-Rblock{
+	width: 1240px;
+	height: 880px;
+	border-radius: 15px;
+}
+.wpfe-education-info-page-theme-main{
+	background-color: #63C55A;
+	border-radius: 15px;
+	width: 1640px;
+	height: 880px;
+	display: flex;
+	flex-direction: row;
+}
+.wpfe-education-info-page-theme-Edubutton{
+  width: 341px;
+  height: 86px;
+  margin-top: 37px;
+  margin-left: 38px;
+	margin-bottom: 28px;
+  color: #DAFFD6;
+  font-family: 'Ermilov-bold';
+  line-height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+  font-size: 40pt;
+  border-radius: 15px;
+  background: #63C55A;
+  box-shadow:  15px 15px 30px #54a74d,
+  -15px -15px 30px #72e368;
+}
+.wpfe-education-info-page-theme-lSelector{
+  width: 341px; 
+  height: 207px; //72px when closed
+  margin-left: 38px;
+	margin-bottom: 30px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+  border-radius: 15px;
+	background: #63C55A;
+  box-shadow:  15px 15px 30px #54a74d,
+  -15px -15px 30px #72e368;
+}
+.wpfe-education-info-page-theme-lSelector-up{
+	width: 341px; 
+  height: 72px;
+	text-align: center;
+	line-height: 72px;
+  color: #DAFFD6;
+  font-family: 'Ermilov-bold';
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+  font-size: 20pt;
+  border-radius: 15px 15px 0 0;
+}
+.wpfe-education-info-page-theme-lSelector-btn{
+	height: 33px;
+  width: 35px;
+  border-radius: 10px;
+	margin-top: 19px;
+  background: #63C55A;
+  box-shadow:  5px 5px 5px #59b151,
+   -5px -5px 5px #6dd963;
+}
+.wpfe-education-info-page-theme-lSelector-down{
+	width: 341px; 
+  height: 135px;
+	text-align: center;
+  color: #DAFFD6;
+  font-family: 'Ermilov-bold';
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+  font-size: 20pt;
+  border-radius: 0 0 15px 15px;
+}
+.wpfe-education-info-page-theme-lSelector-lBlock{
+	width: 323px;
+	height: 119px;
+	border-radius: 15px;
+	padding-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	background: #63C55A;
+  box-shadow:  inset 5px 5px 5px #59b151,
+   inset -5px -5px 5px #6dd963;
+}
+.wpfe-education-info-page-theme-lSelector-lBlock-level{
+	width: 122px;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	font-size: 25pt;
+	font-family: 'Bauhaus 93';
+	border-radius: 15px;
+	background: #63C55a;
+	box-shadow:  4px 4px 15px #4f9e48,
+             -4px -4px 15px #77ec6c;
+}
+.wpfe-education-info-page-theme-tSelector{
+  width: 341px;
+  height: 460px; //72px when closed
+  margin-left: 38px;
+	display: flex;
+	flex-direction: column;
+  border-radius: 15px;
+  box-shadow:  15px 15px 30px #54a74d,
+  -15px -15px 30px #72e368;
+}
+.wpfe-education-info-page-theme-tSelector-up{
+	width: 321px;
+  height: 72px; //72px when closed
+	text-align: center;
+	line-height: 72px;
+  color: #DAFFD6;
+  font-family: 'Ermilov-bold';
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px;
+  font-size: 20pt;
+	background: #63C55A;
+  border-radius: 15px 15px 0 0;
+}
+.wpfe-education-info-page-theme-tSelector-btn{
+	height: 33px;
+  width: 35px;
+  border-radius: 10px;
+	margin-top: 19px;
+	margin-left: 187px;
+  background: #63C55A;
+  box-shadow:  5px 5px 5px #59b151,
+   -5px -5px 5px #6dd963;
+}
+.wpfe-education-info-page-theme-tSelector-down{
+	height: 378px;
+	width: 341px;
+	background: #63C55A;
+	border-radius: 0 0 15px 15px;
+}
+.wpfe-education-info-page-theme-tSelector-theme{
+	margin-left: 21px;
+	margin-bottom: 15px;
+	width: 300px;
+	height: 35px;
+	font-family: 'Ermilov-bold';
+	color: #DAFFD6;
+	font-size: 20pt;
+	text-align: center;
+	line-height: 35px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.wpfe-education-info-page-theme-tSelector-theme-mark{
+	width: 35px;
+	height: 35px;
+	margin-right: 3px;
+	border-radius: 8px;
+	background: #63C55A;
+	box-shadow: inset 3px 3px 9px #4a9444,
+            inset -3px -3px 9px #7cf671;
+}
+.wpfe-education-info-page-theme-lPanel{
+	height: 82px;
+	width: 1197px;
+	margin-top: 64px;
+	background-color: #DAFFD6;
+	display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  background: #DAFFD6;
+  box-shadow: inset 5px 5px 5px #b9d9b6;
+	display: flex;
+  flex-direction: row;
+	justify-content: center;
+}
+.wpfe-education-info-page-theme-level{
+	height: 50px;
+  width: 50px;
+	margin-top: 17px;
+  text-align: center;
+  font-family: 'Bauhaus 93';
+  font-size: 25pt;
+  color: #DAFFD6;
+  border: none;
+  border-radius: 15px;
+  background: #63C55A;
+}
+.wpfe-education-info-page-theme-tagPanel{
+	height: 82px;
+	width: 1197px;
+	margin-top: 10px;
+	background-color: #DAFFD6;
+	display: flex;
+  flex-direction: row;
+	justify-content: space-evenly;
+  border-radius: 15px;
+  background: #DAFFD6;
+  box-shadow: inset 5px 5px 5px #b9d9b6;
+}
+.wpfe-education-info-page-theme-tag{
+	height: 50px;
+  width: auto;
+	margin-top: 17px;
+  text-align: center;
+  font-family: 'Bauhaus 93';
+  font-size: 25pt;
+  color: #DAFFD6;
+  border: none;
+  border-radius: 15px;
+  background: #63c55a;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.wpfe-education-info-page-theme-text{
+	height: 600px;
+	width: 1197px;
+	background-color: #DAFFD6;
+	border-radius: 15px;
+	margin-top: 12px;
+	padding-left: 13px;
+	padding-left: 27px;
+
+}
