@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { LevelItem } from '../level-item';
 
 @Component({
   selector: 'wpfe-level-bar-button',
@@ -6,13 +7,19 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./level-bar-button.component.scss']
 })
 export class LevelBarButtonComponent implements OnInit {
+  @Input() isActive?: boolean;
+  @Input() action?: void;
+  @Input() level: LevelItem;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
   }
 
-  @Input() isActive: boolean = false;
-  @Input() action: void = undefined;
-  @Input() title: string = "";
+  ngOnInit(): void {
+
+  }
+
+  public some(){
+
+  }
+
 }

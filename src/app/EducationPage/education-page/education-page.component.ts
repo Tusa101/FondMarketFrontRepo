@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { DataService } from '../../data-service';
-import { InfoTileItem } from '../education-info-tile/education-info-tile-item';
+import { ThemeItem } from '../education-info-tile/education-info-tile-item';
 
 @Component({
   selector: 'wpfe-education-page',
@@ -15,7 +15,7 @@ export class EducationPageComponent implements OnInit {
     
   }
 
-  public tileList: InfoTileItem[] = this.dataService.infoTileList;
+  public tileList: ThemeItem[] = this.dataService.infoTileList;
 
   ngOnInit(): void {
   }

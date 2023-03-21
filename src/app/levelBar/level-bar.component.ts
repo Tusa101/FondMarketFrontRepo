@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ThemeItem } from '../EducationPage/education-info-tile/education-info-tile-item';
 import { LevelItem } from './level-item';
 
 @Component({
@@ -13,6 +14,10 @@ export class LevelBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @Input() levels: LevelItem[] = [];
+  @Input() levels: LevelItem[];
+  @Input() Theme: ThemeItem;
 
+  public isButtonActive(): boolean {
+    return false;
+  }
 }
