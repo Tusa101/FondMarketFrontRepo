@@ -12,10 +12,10 @@ export class EducationPageComponent implements OnInit {
   constructor(
     private dataService: DataService
   ) {
-    
+
   }
 
-  public tileList: ThemeItem[] = this.dataService.infoTileList;
+  public tileList: ThemeItem[] = this.dataService.themesList;
 
   ngOnInit(): void {
   }

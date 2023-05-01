@@ -1,0 +1,28 @@
+.wpfe-theme-bar {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 15px 15px 30px #54a74d, -15px -15px 30px #72e368;
+    justify-content: center;
+}
+
+.wpfe-theme-bar-up {
+    max-width: 400px;
+    text-align: center;
+    line-height: 72px;
+    color: #DAFFD6;
+    font-family: "Ermilov-bold";
+    display: flex;
+    flex-direction: row;
+    font-size: 20pt;
+    background: #49a23f;
+    justify-content: center;
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 2px solid rgb(202 202 202);
+}
+
+.wpfe-theme-bar-down {
+    overflow: hidden;
+    background: #63C55A;
+    border-radius: 0 0 15px 15px;
+}

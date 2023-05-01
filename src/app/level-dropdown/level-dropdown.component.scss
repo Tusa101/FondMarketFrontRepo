@@ -1,0 +1,72 @@
+.wpfe-level-dropdown {
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: #63C55A;
+    box-shadow: 15px 15px 30px #54a74d, -15px -15px 30px #72e368;
+}
+
+.wpfe-level-dropdown-up {
+    max-width: 400px;
+    text-align: center;
+    line-height: 72px;
+    color: #DAFFD6;
+    font-family: "Ermilov-bold";
+    display: flex;
+    flex-direction: row;
+    font-size: 20pt;
+    background: #49a23f;
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 2px solid rgb(202 202 202);
+    justify-content: center;
+}
+
+.wpfe-level-dropdown-down {
+    color: #DAFFD6;
+    font-family: "Ermilov-bold";
+    display: flex;
+    flex-direction: row;
+    font-size: 20pt;
+    border-radius: 0 0 15px 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.wpfe-level-dropdown-lBlock {
+    width: 323px;
+    height: 119px;
+    border-radius: 15px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #63C55A;
+    box-shadow: inset 5px 5px 5px #59b151,
+        inset -5px -5px 5px #6dd963;
+}
+
+.wpfe-level-dropdown-lBlock-level {
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    font-size: 25pt;
+    font-family: "Bauhaus 93";
+    border-radius: 15px;
+    background: #63C55a;
+    box-shadow: 4px 4px 15px #4f9e48, -4px -4px 15px #77ec6c;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+
+    &:hover {
+        width: 122px;
+        height: 52px;
+        color: white;
+        font-size: 26pt;
+    }
+}

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { LevelItem } from '../level-item';
 
 @Component({
@@ -7,7 +7,8 @@ import { LevelItem } from '../level-item';
   styleUrls: ['./level-bar-button.component.scss']
 })
 export class LevelBarButtonComponent implements OnInit {
-  @Input() isActive?: boolean;
+  @Input() isActive: boolean;
+  @Input() isAvailable: boolean;
   @Input() action?: void;
   @Input() level: LevelItem;
 
@@ -18,8 +19,11 @@ export class LevelBarButtonComponent implements OnInit {
 
   }
 
-  public some(){
-
+  public buttonActiveColor(): string {
+    return this.isActive ? "" : "#89898945";
   }
 
+  public some() {
+
+  }
 }

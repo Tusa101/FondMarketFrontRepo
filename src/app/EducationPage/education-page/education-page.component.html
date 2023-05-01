@@ -1,8 +1,7 @@
 <div class="wpfe-education-page-main">
-    <!-- <app-education-info-tile *ngFor="let tile of tileList" [imgPath]="tile.imagePath">
-    </app-education-info-tile> -->
-		<div class="wpfe-education-page-wiki">Choose your wiki</div>
-		<div class="wpfe-education-page-themes">
-			<wpfe-education-info-tile *ngFor="let tile of tileList"></wpfe-education-info-tile>
-		</div>
+	<div class="wpfe-education-page-wiki">Choose your wiki</div>
+	<div class="wpfe-education-page-themes">
+		<wpfe-education-info-tile *ngFor="let tile of tileList" [routerLink]="['/education-info', tile.title]"
+			[imgPath]="tile.imagePath"></wpfe-education-info-tile>
+	</div>
 </div>

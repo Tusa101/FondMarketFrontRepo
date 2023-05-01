@@ -1,0 +1,9 @@
+<div class="wpfe-theme-bar">
+    <div class="wpfe-theme-bar-up"> Темы
+    </div>
+    <div class="wpfe-theme-bar-down">
+        <wpfe-themes-bar-item *ngFor="let theme of themeList" [isThemeSelected]="isThemeSelected(theme)"
+            [themeTitle]="theme" [routerLink]="['/education-info', theme]">
+        </wpfe-themes-bar-item>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+.wpfe-theme-bar-item {
+    padding: 10px 40px 10px 40px;
+    font-family: "Ermilov-bold";
+    color: #DAFFD6;
+    font-size: 20pt;
+    display: flex;
+    justify-content: flex-start;
+    transition: 0.2s;
+    align-items: center;
+    transition: 0.2s;
+
+    &:hover {
+        color: #ffffff;
+        font-size: 22pt;
+    }
+}

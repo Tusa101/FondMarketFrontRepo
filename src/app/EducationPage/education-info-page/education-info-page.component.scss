@@ -29,14 +29,14 @@
 	margin-bottom: 20px;
 	color: #DAFFD6;
 	font-family: "Ermilov-bold";
-	line-height: 65px;
+	line-height: 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	font-size: 40pt;
+	font-size: 35pt;
 	border-radius: 15px;
-	background: #63C55A;
+	background: #49a23f;
 	box-shadow: 15px 15px 30px #54a74d, -15px -15px 30px #72e368;
 	padding: 10px;
 }
@@ -52,15 +52,17 @@
 }
 
 .wpfe-education-info-page-theme-lSelector-up {
-	padding: 10px;
-	color: #DAFFD6;
-	font-family: "Ermilov-bold";
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	font-size: 20pt;
-	border-radius: 15px 15px 0 0;
-	align-items: center;
+	max-width: 400px;
+    text-align: center;
+    line-height: 72px;
+    color: #DAFFD6;
+    font-family: "Ermilov-bold";
+    display: flex;
+    flex-direction: row;
+    font-size: 20pt;
+    background: #49a23f;
+    border-radius: 15px 15px;
+    justify-content: center;
 }
 
 .wpfe-education-info-page-theme-lSelector-down {
@@ -110,17 +112,17 @@
 }
 
 .wpfe-education-info-page-theme-tSelector-up {
-	max-width: 320px;
-	text-align: center;
-	line-height: 72px;
-	color: #DAFFD6;
-	font-family: "Ermilov-bold";
-	display: flex;
-	flex-direction: row;
-	margin-left: 40px;
-	font-size: 20pt;
-	background: #63C55A;
-	border-radius: 15px 15px 0 0;
+	max-width: 400px;
+    text-align: center;
+    line-height: 72px;
+    color: #DAFFD6;
+    font-family: "Ermilov-bold";
+    display: flex;
+    flex-direction: row;
+    font-size: 20pt;
+    background: #49a23f;
+    border-radius: 15px 15px;
+    justify-content: center;
 }
 
 .wpfe-education-info-page-theme-tSelector-btn {
@@ -210,6 +212,8 @@
 	max-width: 1240px;
 	background-color: #DAFFD6;
 	border-radius: 15px;
+	font-size: 25px;
+	padding: 20px;
 }
 
 .wpfe-education-info-page-theme-Rblock-context {

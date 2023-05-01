@@ -1,52 +1,19 @@
 <div class="wpfe-education-info-page-theme-main">
 	<div class="wpfe-education-info-page-theme-Lblock">
-		<div class="wpfe-education-info-page-theme-Edubutton"> Обучение</div>
-		<div class="wpfe-education-info-page-theme-lSelector">
-			<div class="wpfe-education-info-page-theme-lSelector-up">
-				Выбор уровней
-			</div>
-			<div class="wpfe-education-info-page-theme-lSelector-down">
-				<div class="wpfe-education-info-page-theme-lSelector-lBlock">
-					<div class="wpfe-education-info-page-theme-lSelector-lBlock-level">1 - 15</div>
-					<div class="wpfe-education-info-page-theme-lSelector-lBlock-level">15 - 30</div>
-					<div class="wpfe-education-info-page-theme-lSelector-lBlock-level">30 - 45</div>
-
-				</div>
-			</div>
-		</div>
-		<div class="wpfe-education-info-page-theme-tSelector">
-			<div class="wpfe-education-info-page-theme-tSelector-up"> Темы
-			</div>
-			<div class="wpfe-education-info-page-theme-tSelector-down">
-				<div class="wpfe-education-info-page-theme-tSelector-theme">
-					Тема рас
-
-				</div>
-				<div class="wpfe-education-info-page-theme-tSelector-theme">
-					Тема два
-
-				</div>
-				<div class="wpfe-education-info-page-theme-tSelector-theme">
-					Тема четыре
-
-				</div>
-				<div class="wpfe-education-info-page-theme-tSelector-theme">
-					Лооооооонг тема
-
-				</div>
-				<div class="wpfe-education-info-page-theme-tSelector-theme">
-					14 символов макс
-
-				</div>
-			</div>
-		</div>
+		<div class="wpfe-education-info-page-theme-Edubutton" [routerLink]="''"> Обучение</div>
+		<wpfe-level-dropdown></wpfe-level-dropdown>
+		<wpfe-themes-bar [actualTheme]="theme">
+		</wpfe-themes-bar>
 	</div>
 	<div class="wpfe-education-info-page-theme-Rblock">
 		<div class="wpfe-education-info-page-theme-Rblock-context">
-			<wpfe-level-bar [levels]="this.getHotKeys()">
+			<wpfe-level-bar [levels]="this.getHotKeys()" [mode]="1">
 			</wpfe-level-bar>
-			<wpfe-level-bar [levels]="this.getLevels()">
+
+			<wpfe-level-bar [levels]="this.getLevels()" [theme]="this.theme"
+				(activeLevels)="this.changeSelectedLevels($event)" [mode]="0">
 			</wpfe-level-bar>
+
 			<div class="wpfe-education-info-page-theme-text">
 				{{getText()}}
 			</div>

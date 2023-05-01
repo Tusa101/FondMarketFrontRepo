@@ -5,20 +5,27 @@
 	height: 880px;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
 }
-.wpfe-education-page-themes{
+
+.wpfe-education-page-themes {
 	display: flex;
-	flex-direction: row;
-	padding-left: 94px;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	margin-top: 50px;
+	width: 80%;
 }
+
 @font-face {
 	font-family: 'Ermilov-bold';
 	src: local('Ermilov-bold'),
 		url(/src/app/EducationPage/education-page/Ermilov-bold.otf);
 }
-.wpfe-education-page-wiki{
+
+.wpfe-education-page-wiki {
 	font-family: 'Ermilov-bold';
 	font-size: 50px;
 	margin-top: 20px;
@@ -33,6 +40,6 @@
 	margin-right: auto;
 	border-radius: 15px;
 	background: #63C55A;
-	box-shadow:  20px 20px 60px #54a74d,
-             -20px -20px 60px #72e368;
+	box-shadow: 20px 20px 60px #54a74d,
+		-20px -20px 60px #72e368;
 }

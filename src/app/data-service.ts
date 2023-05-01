@@ -11,20 +11,12 @@ export class DataService {
     constructor(httpClient: HttpClient) {
     }
 
-    public get infoTileList(): ThemeItem[] {
+    public get themesList(): ThemeItem[] {
         return this.themeList;
     }
 
-    public getInfoTextParts(): string {  //TODO: Need new Object for InfoTextPart
+    public getInfoTextParts(): string {//TODO: Need new Object for InfoTextPart
         return "";
-    }
-
-    private trancferTileJson() {
-
-    }
-
-    private trancferInfoTextJson() {
-
     }
 
     public getLevelsByTheme(): LevelItem[] {
@@ -39,15 +31,19 @@ export class DataService {
 
     public getFullThemeText(theme: Themes, levels: number[]): string {
         return this.textSections.filter(
-            section => section.availableTheme === theme || Themes.All
-                && section.availableLevels.map(availableLevel => levels.some(level => availableLevel === level))  //REWORK!!!!!!!!!!!!!
+            section =>
+                section.availableTheme === theme
+                && section.availableLevels.some(availableLevel => levels.some(level => availableLevel === level))//REWORK!!!!!!!!!!!!!
         ).map(item => item.sectionText).join(" ");
     }
 
     // <--------------------TEST DATA------------------>
     private themeList: ThemeItem[] = [
-        { title: Themes.theme1, tooltip: "", imagePath: "https://sun9-19.userapi.com/impg/FK4IZ3KUV9wZZIhKGgD3U6rjDuOyt4WtRUORLw/b6o4kgurx6s.jpg?size=251x251&quality=96&sign=1c5f41d24433e11d9f57677686b95057&type=album", hotKey: ["some", "body"], activeLevels: [1, 2, 3, 4, 5, 6, 7] },
-        { title: Themes.theme2, tooltip: "", imagePath: "https://sun9-19.userapi.com/impg/FK4IZ3KUV9wZZIhKGgD3U6rjDuOyt4WtRUORLw/b6o4kgurx6s.jpg?size=251x251&quality=96&sign=1c5f41d24433e11d9f57677686b95057&type=album", hotKey: ["some", "body"], activeLevels: [1, 2, 3, 4, 5, 6, 7] }
+        { title: Themes.theme1, tooltip: "", imagePath: "https://cdn-icons-png.flaticon.com/512/74/74742.png", hotKey: ["some", "body"], activeLevels: [1, 2, 3, 5, 6,] },
+        { title: Themes.theme2, tooltip: "", imagePath: "https://cdn-icons-png.flaticon.com/512/1742/1742983.png", hotKey: ["some", "body", "dsa", "dsa2"], activeLevels: [2, 3,] },
+        { title: Themes.theme3, tooltip: "", imagePath: "https://cdn-icons-png.flaticon.com/512/10227/10227695.png", hotKey: ["some", "body"], activeLevels: [1,2,3,4,7,12,15] },
+        { title: Themes.theme4, tooltip: "", imagePath: "https://cdn-icons-png.flaticon.com/512/2953/2953363.png", hotKey: ["some", "body"], activeLevels: [3, 4, 7] },
+        { title: Themes.theme5, tooltip: "", imagePath: "https://cdn-icons-png.flaticon.com/512/2510/2510727.png", hotKey: ["some", "body"], activeLevels: [1, 2, 3, 4, 7, 10] }
     ];
 
     public levelList: LevelItem[] = [
@@ -65,28 +61,42 @@ export class DataService {
         { title: 12 },
         { title: 13 },
         { title: 14 },
-        { title: 15 },
+        { title: 15 }
     ];
 
     public textSections: TextSection[] = [
         {
-            availableLevels: [1, 3, 5],
+            availableLevels: [1],
             availableTheme: Themes.theme1,
-            sectionText: "Some Text TUTUUTUTUTUTUUTUTUT"
+            sectionText: "Ебать Саня!"
         },
         {
-            availableLevels: [1, 2, 6],
+            availableLevels: [2],
             availableTheme: Themes.theme1,
-            sectionText: "Some Text TUTUUTUTUTUTUUTUTUT323232421412"
+            sectionText: "Не зря меня взяли, да?"
+        },
+        {
+            availableLevels: [3],
+            availableTheme: Themes.theme1,
+            sectionText: "Да я знаю что я хорош)"
+        },
+        {
+            availableLevels: [1, 2, 3],
+            availableTheme: Themes.theme2,
+            sectionText: "Как тебе)))"
+        },
+        {
+            availableLevels: [1, 2, 3],
+            availableTheme: Themes.theme3,
+            sectionText: "Скажи же магия"
         }
     ]
-
-    public text: string = "eqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeqeq"
     // <--------------------TEST DATA------------------>
 }
 
 export interface TextSection {
     availableLevels: number[];
+    availableHotKeys?: string[];
     availableTheme: Themes;
     sectionText: string;
 }

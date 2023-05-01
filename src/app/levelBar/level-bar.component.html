@@ -1,6 +1,5 @@
 <div class="wpfe-education-info-page-theme-lPanel">
-    <wpfe-level-bar-button *ngFor="let level of levels"
-        [level]="level"
-        [isActive]="isButtonActive()">
+    <wpfe-level-bar-button *ngFor="let level of levels" [isAvailable]="isButtonAvailable(level)" [level]="level"
+        [isActive]="isButtonActive(level)" (click)="changeSelectedLevels(level)">
     </wpfe-level-bar-button>
 </div>

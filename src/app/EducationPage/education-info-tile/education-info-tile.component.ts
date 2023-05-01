@@ -12,9 +12,9 @@ export class EducationInfoTileComponent implements OnInit {
 
   constructor(
   ) {
-    
+
   }
-  
+
   ngOnInit(): void {
   }
 

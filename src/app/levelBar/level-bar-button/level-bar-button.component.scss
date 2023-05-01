@@ -1,3 +1,5 @@
+$disabledcolor: #89898945;
+
 .wpfe-education-info-page-theme-level {
     height: 50px;
     text-align: center;
@@ -6,9 +8,17 @@
     display: flex;
     color: #DAFFD6;
     border-radius: 15px;
-    background: #63C55A;
+    background: #49a23f;
     padding: 5px 15px;
     margin: 10px;
     align-items: center;
     border: none;
+    transition: 0.2s;
+
+
+    &:hover {
+        padding: 7px 15px;
+        color: #fbfbfb;
+        font-size: 27pt;
+    }
 }

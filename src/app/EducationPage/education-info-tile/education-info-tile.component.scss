@@ -1,16 +1,20 @@
 .wpfe-education-info-tile {
-	margin-top: 50px;
+	display: flex;
 	border-radius: 50px;
 	background: #63C55A;
-	box-shadow:  20px 20px 60px #54a74d,
-             -20px -20px 60px #72e368;
-	width: 294px;
-	height: 294px;
-	text-align: center;
-	margin-right: 94px;
+	box-shadow: 20px 20px 60px #54a74d, -20px -20px 60px #72e368;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	transition: 0.5s;
+
+	&:hover {
+		padding: 25px;
+	}
 }
-.wpfe-education-info-tile-image{
+
+.wpfe-education-info-tile-image {
 	width: 250px;
 	height: 250px;
-	margin-top: 22px;
 }
