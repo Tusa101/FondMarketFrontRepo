@@ -209,10 +209,15 @@
 
 .wpfe-education-info-page-theme-text {
 	height: 670px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;	 
+	word-break: break-all;
+	overflow: scroll;
 	max-width: 1240px;
 	background-color: #DAFFD6;
 	border-radius: 15px;
-	font-size: 25px;
+	font-size: 35px;
 	padding: 20px;
 }
 
