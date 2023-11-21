@@ -4,7 +4,6 @@ import { EducationInfoPageComponent } from './EducationPage/education-info-page/
 import { EducationPageComponent } from './EducationPage/education-page/education-page.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'education-page', pathMatch: 'full' },
   { path: 'education-page', component: EducationPageComponent },
   { path: 'education-info/:id', component: EducationInfoPageComponent }
 ];
