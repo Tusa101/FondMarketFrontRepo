@@ -5,21 +5,27 @@
 }
 
 .wpfe-education-info-page-theme-Lblock {
-	width: 400px;
-	height: 880px;
+	width: 20%;
+  max-width: 400px;
+	max-height: 880px;
 	border-radius: 15px;
 	padding-right: 20px;
 }
 
 .wpfe-education-info-page-theme-Rblock {
-	width: 1240px;
+	width: 70%;
+  min-width: 50%;
 	height: 880px;
+  max-height: 880px;
 	border-radius: 15px;
 }
 
 .wpfe-education-info-page-theme-main {
-	background-color: #63C55A;
-	max-width: 1640px;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+  background-color: #63C55A;
+	width:100%;
+  height: 100%;
 	padding: 40px;
 	display: flex;
 	flex-direction: row;
@@ -34,11 +40,15 @@
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
-	font-size: 35pt;
+	font-size: clamp(5px, calc(10px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280)), 28px);
 	border-radius: 15px;
 	background: #49a23f;
 	box-shadow: 15px 15px 30px #54a74d, -15px -15px 30px #72e368;
-	padding: 10px;
+	padding: clamp(1px, 1vw, 10px) clamp(1px, 1vw, 10px) clamp(1px, 1vw, 10px) clamp(1px, 1vw, 10px);
+  &:hover {
+    color: #fbfbfb;
+    font-size: clamp(5px, calc(20px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280)), 32px);
+}
 }
 
 .wpfe-education-info-page-theme-lSelector {
@@ -172,7 +182,7 @@
 	margin-top: 17px;
 	text-align: center;
 	font-family: 'Bauhaus 93';
-	font-size: 25pt;
+	font-size: clamp(5px, calc(15px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280)), 22px);
 	color: #DAFFD6;
 	border: none;
 	border-radius: 15px;
@@ -181,7 +191,7 @@
 
 .wpfe-education-info-page-theme-tagPanel {
 	height: 82px;
-	width: 1197px;
+	width:100%;
 	margin-top: 10px;
 	background-color: #DAFFD6;
 	display: flex;
@@ -208,16 +218,18 @@
 }
 
 .wpfe-education-info-page-theme-text {
-	height: 670px;
+  min-height: 600px;
+  max-height: 600px;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;	 
+	flex-wrap: wrap;
 	word-break: break-all;
-	overflow: scroll;
-	max-width: 1240px;
+	overflow-y: scroll;
+  scrollbar-width: 1px;
+	max-width: 100%;
 	background-color: #DAFFD6;
 	border-radius: 15px;
-	font-size: 35px;
+	font-size: clamp(5px, calc(25px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280)), 30px);
 	padding: 20px;
 }
 

@@ -14,7 +14,7 @@
     font-family: "Ermilov-bold";
     display: flex;
     flex-direction: row;
-    font-size: 20pt;
+    font-size: clamp(5px, calc(10px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280)), 22px);
     background: #49a23f;
     justify-content: center;
     border-radius: 15px 15px 0px 0px;

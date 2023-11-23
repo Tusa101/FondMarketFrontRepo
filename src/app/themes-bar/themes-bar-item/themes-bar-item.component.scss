@@ -1,8 +1,8 @@
 .wpfe-theme-bar-item {
-    padding: 10px 40px 10px 40px;
+    padding: 10px clamp(10px, 3vw, 40px);
     font-family: "Ermilov-bold";
     color: #DAFFD6;
-    font-size: 20pt;
+    font-size: clamp(5px, calc(5px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280)), 22px);
     display: flex;
     justify-content: flex-start;
     transition: 0.2s;
@@ -11,6 +11,6 @@
 
     &:hover {
         color: #ffffff;
-        font-size: 22pt;
+        font-size: clamp(5px, calc(10px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280)), 25px);
     }
 }

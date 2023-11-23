@@ -1,8 +1,8 @@
 .wpfe-education-page-main {
 	background-color: #63C55A;
 	border-radius: 15px;
-	width: 1640px;
-	height: 880px;
+	width:100%;
+	min-height: 880px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -27,8 +27,9 @@
 
 .wpfe-education-page-wiki {
 	font-family: 'Ermilov-bold';
-	font-size: 50px;
+	font-size: clamp(5px, calc(30px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280)), 50px);
 	margin-top: 20px;
+  padding: 10px;
 	text-align: center;
 	color: #d9f0d7;
 	display: flex;

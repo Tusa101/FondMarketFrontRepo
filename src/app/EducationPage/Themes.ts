@@ -1,8 +1,9 @@
 export enum Themes {
-    theme1 = "Stocks",
-    theme2 = "Trading",
-    theme3 = "Futures",
-    theme4 = "Cash",
-    theme5 = "Hedge",
-    All = "All"
+    theme1 = "History",
+    theme2 = "Stocks",
+    theme3 = "Multiplexors",
+    theme4 = "Futures",
+    theme6 = "Analysis",
+    theme5 = "Strategy",
+    //All = "All"
 }

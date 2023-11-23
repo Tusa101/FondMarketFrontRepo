@@ -11,16 +11,18 @@
 .wpfe-level-dropdown-up {
     max-width: 400px;
     text-align: center;
-    line-height: 72px;
+    line-height: calc(20px + (16 + 16 * 0.7) * ((100vw - 320px) / 1920));
     color: #DAFFD6;
     font-family: "Ermilov-bold";
     display: flex;
     flex-direction: row;
-    font-size: 20pt;
+    font-size: clamp(5px, calc(10px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280)), 22px);
+
     background: #49a23f;
     border-radius: 15px 15px 0px 0px;
     border-bottom: 2px solid rgb(202 202 202);
     justify-content: center;
+    padding: 10px;
 }
 
 .wpfe-level-dropdown-down {
@@ -28,7 +30,7 @@
     font-family: "Ermilov-bold";
     display: flex;
     flex-direction: row;
-    font-size: 20pt;
+    font-size: clamp(5px, calc(5px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280)), 22px);
     border-radius: 0 0 15px 15px;
     justify-content: center;
     padding: 10px;
@@ -49,11 +51,11 @@
 }
 
 .wpfe-level-dropdown-lBlock-level {
-    width: 120px;
-    height: 50px;
+    width: 40%;
+    height: 40%;
     text-align: center;
     display: flex;
-    font-size: 25pt;
+    font-size:  clamp(5px, calc(5px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280)), 22px);
     font-family: "Bauhaus 93";
     border-radius: 15px;
     background: #63C55a;
@@ -69,4 +71,11 @@
         color: white;
         font-size: 26pt;
     }
+    &:disabled{
+      pointer-events:none;
+    }
+}
+.disabled{
+  pointer-events:none;
+  opacity: 0.5;
 }

@@ -4,7 +4,7 @@ $disabledcolor: #89898945;
     height: 50px;
     text-align: center;
     font-family: "Bauhaus 93";
-    font-size: 25pt;
+    font-size: clamp(5px, calc(15px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280)), 22px);
     display: flex;
     color: #DAFFD6;
     border-radius: 15px;
@@ -19,6 +19,6 @@ $disabledcolor: #89898945;
     &:hover {
         padding: 7px 15px;
         color: #fbfbfb;
-        font-size: 27pt;
+        font-size: clamp(5px, calc(20px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280)), 25px);
     }
 }

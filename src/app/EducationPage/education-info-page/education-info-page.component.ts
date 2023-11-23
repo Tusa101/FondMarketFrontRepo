@@ -10,7 +10,7 @@ import { Themes } from '../Themes';
   styleUrls: ['./education-info-page.component.scss']
 })
 export class EducationInfoPageComponent implements OnInit {
-  public levels: number[] = this.dataService.themesList?.find(item => item.title === this.theme)?.activeLevels ?? []; //REWORK 
+  public levels: number[] = this.dataService.themesList?.find(item => item.title === this.theme)?.activeLevels ?? []; //REWORK
   private selectedLevels: LevelItem[] = [];
   public hotKeys: LevelItem[] = this.dataService.getHotKey();
   public theme: Themes;

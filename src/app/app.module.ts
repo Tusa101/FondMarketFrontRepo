@@ -12,6 +12,7 @@ import { LevelDropdownComponent } from './level-dropdown/level-dropdown.componen
 import { LevelDropdownItemComponent } from './level-dropdown/level-dropdown-item/level-dropdown-item.component';
 import { ThemesBarComponent } from './themes-bar/themes-bar.component';
 import { ThemesBarItemComponent } from './themes-bar/themes-bar-item/themes-bar-item.component';
+import { DataService } from './data-service';
 
 
 @NgModule({
