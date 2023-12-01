@@ -77,6 +77,7 @@ rm latest.zip
 nano /etc/nginx/sites-available/wordpress.config
 ```
 
+Конфиг несколько избыточен, и работать будет без части блоков location, но трогать не стал, оставил как есть.
 ### Конфиг /etc/nginx/sites-available/wordpress.config
 
 ```
@@ -145,9 +146,8 @@ server {
     }
     ############################################################################
     location  / {
-        #index index.html index.php;
-        index index.php;
-        try_files $uri $uri/ /index.php?$args index.html;
+        index index.html index.php;
+        try_files index.html $uri $uri/ /index.php?$args;
         # index  index.php index.html index.htm;
         # try_files $uri $uri/ /index.php?$args;
     }
